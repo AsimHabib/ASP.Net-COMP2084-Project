@@ -29,5 +29,9 @@ namespace FinalExam.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<FinalExam.Models.Division> Divisions { get; set; }
+
+        public System.Data.Entity.DbSet<FinalExam.Models.Team> Teams { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+﻿@model IEnumerable<FinalExam.Models.Division>
+
+@{
+    ViewBag.Title = "NHL Divisions";
+}
+
+<h2>NHL Divisions</h2>
+
+<ul>
+    @foreach (var div in Model)
+    {
+        
+        <li>@Html.ActionLink(div.Name, "Details", new { item = div.Name})</li>
+
+    }
+</ul>
+
